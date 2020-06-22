@@ -1,5 +1,3 @@
-class Example {
-  name: string;
-}
+import { displaySomeData } from "./app_module";
 
-console.log("hello");
+console.log(displaySomeData("Hello, param from a module - again!"));

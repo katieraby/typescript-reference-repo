@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="class_inheritance.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <!-- I used an older version of systemJS here so this implementation is no longer supported. SystemJS don't support the import of commonJS modules anymore-->
   </head>
-  <body></body>
+  <body>
+    <script>
+      SystemJS.config({
+        baseURL: "/",
+        packages: {
+          "/": {
+            defaultExtension: "js",
+          },
+        },
+      });
+
+      SystemJS.import("app.js");
+    </script>
+  </body>
 </html>
