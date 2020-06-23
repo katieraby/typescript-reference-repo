@@ -1,3 +1,5 @@
+//pascal naming convention for custom type
+
 interface AutomobileInterface {
   brand?: string;
   speed?: number;

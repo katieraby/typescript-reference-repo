@@ -1,3 +1,4 @@
+//pascal naming convention for custom type
 const automobile = {
     brand: "BMW",
     speed: 200,
